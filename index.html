@@ -4,16 +4,26 @@
     <meta charset="utf-8">
     <title>Mocha Tests</title>
     <link href="lib/mocha.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
 </head>
 
 <body>
 
 
     <!-- 👍 YOUR HTML HERE 👍 -->
-    <img id="inn" src="" alt="">
-    <img id="dagger" src="" alt="">
-    <img id="bag" src="" alt="">
+    <main>
+        <img id="inn" src="pics/inn.jpeg" alt="">
+        <img id="gun" src="pics/AK47.jpg" alt="">
+        <img id="dagger" src="pics/dagger.jpeg" alt="">
+        <img id="bag" src="pics/bag.jpeg" alt="">
 
+    </main>
+    <footer>
+        <h1>Hero Status</h1>
+        <div class="formSection"> <input type="text" id="name"> </div>
+        <div class="button"> <button onclick="changeHeroName(hero)" type="default">Change hero name</button></div>
+        <div id="display"></div>
+    </footer>
 
     <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
     <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
